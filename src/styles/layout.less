@@ -1,0 +1,48 @@
+@import './variables.less';
+
+#app {
+
+    // 主体区域 Main container
+    .main-container {
+        min-height: 100%;
+        transition: margin-left .28s;
+        margin-left: @sideBarWidth;
+        position: relative;
+    }
+
+    // 侧边栏 Sidebar container
+    .sidebar-container {
+        padding-top: @navbarHeigth;
+        transition: width 0.28s;
+        width: @sideBarWidth  !important;
+        height: 100%;
+        position: fixed;
+        font-size: 0px;
+        background-color: @sideMenuBg ;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1001;
+        overflow: hidden;
+    }
+
+    // 顶部导航栏 
+    .navbar-container {
+        height: @navbarHeigth;
+        background-color: @navBarMenuBg;
+        line-height: @navbarHeigth;
+        padding: 0px 10rem;
+    }
+
+    .horizontal-collapse-transition {
+        transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+        overflow-x: hidden !important;
+
+        .el-scrollbar__view {
+            height: 100%;
+        }
+    }
+}

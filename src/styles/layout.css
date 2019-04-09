@@ -1,0 +1,35 @@
+#app .main-container {
+  min-height: 100%;
+  transition: margin-left 0.28s;
+  margin-left: 10rem;
+  position: relative;
+}
+#app .sidebar-container {
+  padding-top: 3rem;
+  transition: width 0.28s;
+  width: 10rem !important;
+  height: 100%;
+  position: fixed;
+  font-size: 0px;
+  background-color: #21A179;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  overflow: hidden;
+}
+#app .navbar-container {
+  height: 3rem;
+  background-color: #53868B;
+  line-height: 3rem;
+  padding: 0px 10rem;
+}
+#app .horizontal-collapse-transition {
+  transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+}
+#app .scrollbar-wrapper {
+  overflow-x: hidden !important;
+}
+#app .scrollbar-wrapper .el-scrollbar__view {
+  height: 100%;
+}
